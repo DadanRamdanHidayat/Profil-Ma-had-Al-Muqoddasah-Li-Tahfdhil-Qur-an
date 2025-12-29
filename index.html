@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma'had Al-Muqoddasah Li Tahfizhil Qur'an Ponorogo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0f172a',
+            secondary: '#1e293b',
+            accent: '#3b82f6',
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-primary via-slate-900 to-indigo-950 text-gray-200 min-h-screen transition-colors duration-500">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-primary/80 backdrop-blur-md z-50 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img src="https://i.ytimg.com/vi/3V0JSB5RDTE/hq720.jpg" alt="Logo Al-Muqoddasah" class="h-12 rounded-full border-2 border-accent">
+        <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Al-Muqoddasah</h1>
+      </div>
+      <div class="flex items-center space-x-8">
+        <ul class="hidden md:flex space-x-8">
+          <li><a href="#home" class="hover:text-accent transition">Home</a></li>
+          <li><a href="#about" class="hover:text-accent transition">Tentang</a></li>
+          <li><a href="#programs" class="hover:text-accent transition">Program</a></li>
+          <li><a href="#kegiatan" class="hover:text-accent transition">Kegiatan</a></li>
+          <li><a href="#facilities" class="hover:text-accent transition">Fasilitas</a></li>
+          <li><a href="#gallery" class="hover:text-accent transition">Galeri</a></li>
+          <li><a href="#admissions" class="hover:text-accent transition">Pendaftaran</a></li>
+          <li><a href="#contact" class="hover:text-accent transition">Kontak</a></li>
+        </ul>
+        <button id="theme-toggle" class="text-2xl focus:outline-none">
+          <i id="theme-toggle-dark" class="fas fa-moon hidden"></i>
+          <i id="theme-toggle-light" class="fas fa-sun"></i>
+        </button>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-primary/95">
+      <ul class="flex flex-col space-y-4 px-6 py-4">
+        <li><a href="#home" class="hover:text-accent transition">Home</a></li>
+        <!-- ... repeat links ... -->
+        <li><a href="#contact" class="hover:text-accent transition">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden" data-aos="fade-down">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://panduanterbaik.id/wp-content/uploads/2025/03/Ponpes-Tahfidz-Al-Muqoddasah-Ponorogo.jpg');">
+      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-tr from-blue-900/50 via-transparent to-indigo-900/50"></div>
+    <div class="text-center z-10 px-6">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-cyan-300 drop-shadow-2xl">
+        Ma'had Al-Muqoddasah Li Tahfizhil Qur'an
+      </h1>
+      <p class="text-xl md:text-3xl mb-4 text-gray-200 drop-shadow-lg">Merajut Kebersamaan, Mewariskan Nilai-Nilai Al-Qur'an,</p>
+      <p class="text-xl md:text-3xl mb-8 text-gray-200 drop-shadow-lg">Menggapai Dunia Lillah</p>
+      <div class="space-x-4">
+        <a href="#programs" class="px-8 py-4 bg-accent text-white rounded-full hover:bg-blue-600 transition shadow-lg">Program Tahfidz</a>
+        <a href="#admissions" class="px-8 py-4 border border-accent text-accent rounded-full hover:bg-accent/20 transition">Daftar Santri Baru</a>
+      </div>
+    </div>
+    <div class="absolute bottom-10 animate-bounce">
+      <i class="fas fa-chevron-down text-4xl text-gray-400"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 max-w-7xl mx-auto" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Tentang Kami</h2>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="flex justify-center" data-aos="fade-right" data-aos-delay="200">
+        <img src="https://i.ytimg.com/vi/3V0JSB5RDTE/maxresdefault.jpg" alt="Ma'had Al-Muqoddasah" class="rounded-2xl shadow-2xl border-4 border-accent/30 w-full max-w-md object-cover">
+      </div>
+      <div class="space-y-6" data-aos="fade-left" data-aos-delay="200">
+        <p class="text-lg leading-relaxed">
+          Ma'had Al-Muqoddasah Li Tahfizhil Qur'an didirikan pada 18 Oktober 1992 oleh KH. Hasan Abdullah Sahal (alumni Gontor dan Islamic University Madinah). Berlokasi di Nglumpang, Mlarak, Ponorogo – hanya 500 meter dari Pondok Modern Gontor.
+        </p>
+        <p class="text-lg leading-relaxed">
+          Fokus utama: Tahfidz Al-Qur'an 30 Juz dengan sanad muttasil, pendidikan formal (SD-SMP), 
+          bahasa Arab & Inggris, serta pembentukan akhlak Qur'ani. Hingga kini: 445 santri khatam, 
+          252 wisuda. Alumni tersebar Indonesia & luar negeri (Universitas Islam Madinah, IIUM Malaysia, UGM, dll. Serta banyak alumni yang mendirikan ma'had tahfidz.
+        </p>
+        <p class="text-lg leading-relaxed font-bold">
+          Motto: Mengintelekkan santri dan menyantrikan intelek
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="py-20 px-6 bg-secondary/50" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Program Pendidikan</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-gradient-to-br from-primary to-secondary/80 rounded-2xl p-6 shadow-lg hover:scale-105 transition" data-aos="zoom-in">
+        <i class="fas fa-quran text-5xl text-accent mb-4"></i>
+        <h3 class="text-2xl font-bold mb-2">Tahfidz Al-Qur'an</h3>
+        <p>Hafalan 30 Juz dengan target mutqin & sanad.</p>
+      </div>
+      <div class="bg-gradient-to-br from-primary to-secondary/80 rounded-2xl p-6 shadow-lg hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fas fa-book-open text-5xl text-accent mb-4"></i>
+        <h3 class="text-2xl font-bold mb-2">Pendidikan Formal</h3>
+        <p>SD, SMP setara dengan kurikulum nasional.</p>
+      </div>
+      <div class="bg-gradient-to-br from-primary to-secondary/80 rounded-2xl p-6 shadow-lg hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fas fa-language text-5xl text-accent mb-4"></i>
+        <h3 class="text-2xl font-bold mb-2">Bahasa Arab & Inggris</h3>
+        <p>Penguasaan muhadatsah sehari-hari.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kegiatan Santri Section (BARU) -->
+  <section id="kegiatan" class="py-20 px-6 max-w-7xl mx-auto" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Kegiatan Santri</h2>
+    <div class="space-y-6">
+      <div class="bg-secondary/60 rounded-2xl overflow-hidden">
+        <button class="w-full px-6 py-4 text-left font-bold flex justify-between bg-accent/20" onclick="this.nextElementSibling.classList.toggle('hidden')">
+          Kegiatan Harian <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="hidden p-6 overflow-x-auto">
+          <table class="min-w-full bg-primary/50 rounded-lg">
+            <thead class="bg-accent/30">
+              <tr><th class="px-4 py-2 text-left">Waktu</th><th class="px-4 py-2 text-left">Kegiatan</th></tr>
+            </thead>
+            <tbody class="text-sm">
+              <tr><td>03.00-04.45</td><td>Bangun pagi, Mandi & Sholat Subuh</td></tr>
+              <tr><td>05.30-07.00</td><td>KBM Tahfidz (tasmi' hafalan)</td></tr>
+              <tr><td>07.00-07.30</td><td>Sarapan pagi</td></tr>
+              <tr><td>07.30-12.00</td><td>KBM Formal (SD/SMP/SMA)</td></tr>
+              <tr><td>12.00-14.30</td><td>Sholat Dzuhur, makan siang & istirahat</td></tr>
+              <tr><td>14.30-15.30</td><td>Mandi & Sholat Ashar</td></tr>
+              <tr><td>16.00-17.00</td><td>KBM Tahfidz</td></tr>
+              <tr><td>17.00-18.30</td><td>Istirahat & Sholat Maghrib</td></tr>
+              <tr><td>19.00-20.00</td><td>KBM Tahfidz</td></tr>
+              <tr><td>20.00-21.00</td><td>Sholat Isya & makan malam</td></tr>
+              <tr><td>21.00-22.00</td><td>Belajar malam</td></tr>
+              <tr><td>22.00-03.00</td><td>Istirahat malam</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Accordion Ekstrakurikuler, Mingguan, Tahunan serupa -->
+      <div class="bg-secondary/60 rounded-2xl overflow-hidden">
+        <button class="w-full px-6 py-4 text-left font-bold flex justify-between bg-accent/20" onclick="this.nextElementSibling.classList.toggle('hidden')">
+          Ekstrakurikuler <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="hidden p-6">
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Jam'iyyatul Qurro' (JMQ)</li>
+            <li>Teater Islami Muqoddasah (TIM)</li>
+            <li>AMQ News</li>
+            <li>PORSAMA (Olahraga)</li>
+            <li>Hadrah 'Asyiqul Qur'an</li>
+            <li>Marching Band MBCMK</li>
+            <li>Jam'iyyatul Khutoba' (JMK)</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Tambah Mingguan & Tahunan jika perlu -->
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="py-20 px-6 max-w-7xl mx-auto" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Fasilitas</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div data-aos="fade-up">
+        <img src="foto.jpg" alt="Asrama" class="rounded-2xl shadow-2xl w-full h-64 object-cover">
+        <h3 class="text-xl font-bold mt-4">Asrama Santri Putra & Putri</h3>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100">
+        <img src="foto.jpg" alt="Masjid" class="rounded-2xl shadow-2xl w-full h-64 object-cover">
+        <h3 class="text-xl font-bold mt-4">Masjid & Ruang Tahfidz</h3>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <img src="foto.jpg" alt="Lapangan" class="rounded-2xl shadow-2xl w-full h-64 object-cover">
+        <h3 class="text-xl font-bold mt-4">Lapangan & Ekstrakurikuler</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-20 px-6 bg-secondary/50" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Prestasi</h2>
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="text-lg mb-8">Telah mencetak ratusan huffazh 30 Juz yang tersebar di Indonesia & luar negeri, banyak mendirikan ma'had tahfidz baru, dan melanjutkan studi tinggi.</p>
+      <i class="fas fa-trophy text-8xl text-accent"></i>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+<section id="gallery" class="py-20 px-6 bg-secondary/50" data-aos="fade-up">
+  <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Galeri Kegiatan</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    <!-- Foto 1 -->
+    <figure class="group">
+      <img src="foto.jpg" 
+           alt="Gedung Utama Ponpes Biru-Putih Modern" 
+           class="rounded-2xl shadow-2xl hover:scale-105 transition object-cover h-64 w-full">
+      <figcaption class="mt-4 text-center text-lg font-medium text-gray-300 group-hover:text-white transition">
+        Gedung Utama Ponpes Biru-Putih Modern
+      </figcaption>
+    </figure>
+
+    <!-- Foto 2 -->
+    <figure class="group">
+      <img src="foto.jpg" 
+           alt="Tampak Depan Kampus" 
+           class="rounded-2xl shadow-2xl hover:scale-105 transition object-cover h-64 w-full">
+      <figcaption class="mt-4 text-center text-lg font-medium text-gray-300 group-hover:text-white transition">
+        Tampak Depan Kampus Al-Muqoddasah
+      </figcaption>
+    </figure>
+
+    <!-- Foto 3 -->
+    <figure class="group">
+      <img src="foto.jpg" 
+           alt="Shalat Berjamaah" 
+           class="rounded-2xl shadow-2xl hover:scale-105 transition object-cover h-64 w-full">
+      <figcaption class="mt-4 text-center text-lg font-medium text-gray-300 group-hover:text-white transition">
+        Santri Shalat Berjamaah di Masjid Jami'
+      </figcaption>
+    </figure>
+
+    <!-- Foto 4 -->
+    <figure class="group">
+      <img src="foto.jpg" 
+           alt="Ekstrakurikuler" 
+           class="rounded-2xl shadow-2xl hover:scale-105 transition object-cover h-64 w-full">
+      <figcaption class="mt-4 text-center text-lg font-medium text-gray-300 group-hover:text-white transition">
+        Kegiatan Ekstrakurikuler & Olahraga
+      </figcaption>
+    </figure>
+
+    <!-- Foto 5 -->
+    <figure class="group">
+      <img src="foto.jpg" 
+           alt="Halaqoh Tahfidz" 
+           class="rounded-2xl shadow-2xl hover:scale-105 transition object-cover h-64 w-full">
+      <figcaption class="mt-4 text-center text-lg font-medium text-gray-300 group-hover:text-white transition">
+        Halaqoh Tahfidz & Muraja'ah Intensif
+      </figcaption>
+    </figure>
+
+    <!-- Foto 6 -->
+    <figure class="group">
+      <img src="foto.jpg" 
+           alt="Ujian Tahfidz" 
+           class="rounded-2xl shadow-2xl hover:scale-105 transition object-cover h-64 w-full">
+      <figcaption class="mt-4 text-center text-lg font-medium text-gray-300 group-hover:text-white transition">
+        Ujian & Tes Tahfidz Qur'an
+      </figcaption>
+    </figure>
+
+    <!-- Foto 7 -->
+    <figure class="group">
+      <img src="foto.jpg" 
+           alt="Wisuda Haflah" 
+           class="rounded-2xl shadow-2xl hover:scale-105 transition object-cover h-64 w-full">
+      <figcaption class="mt-4 text-center text-lg font-medium text-gray-300 group-hover:text-white transition">
+        Wisuda Haflah Khotmil Qur'an
+      </figcaption>
+    </figure>
+
+    <!-- Foto 8 -->
+    <figure class="group">
+      <img src="foto.jpg" 
+           alt="Kegiatan Pagi" 
+           class="rounded-2xl shadow-2xl hover:scale-105 transition object-cover h-64 w-full">
+      <figcaption class="mt-4 text-center text-lg font-medium text-gray-300 group-hover:text-white transition">
+        Aktivitas Santri Pagi Hari
+      </figcaption>
+    </figure>
+
+    <!-- Foto 9 -->
+    <figure class="group">
+      <img src="foto.jpg" 
+           alt="Prosesi Haflah" 
+           class="rounded-2xl shadow-2xl hover:scale-105 transition object-cover h-64 w-full">
+      <figcaption class="mt-4 text-center text-lg font-medium text-gray-300 group-hover:text-white transition">
+        Prosesi Haflah Khotmil Qur'an
+      </figcaption>
+    </figure>
+
+    <!-- Foto 10 (opsional) -->
+    <figure class="group">
+      <img src="foto.jpg" 
+           alt="Tampak Depan" 
+           class="rounded-2xl shadow-2xl hover:scale-105 transition object-cover h-64 w-full">
+      <figcaption class="mt-4 text-center text-lg font-medium text-gray-300 group-hover:text-white transition">
+        Tampak Depan Ponpes Modern
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- Tombol Sosmed -->
+  <div class="text-center mt-12">
+    <p class="text-lg mb-4">Untuk foto, reels, dan video kegiatan terbaru, kunjungi akun resmi kami:</p>
+    <div class="flex justify-center space-x-6">
+      <a href="https://www.instagram.com/almuqoddasah_tv/" target="_blank" class="px-8 py-4 bg-pink-600 text-white rounded-full hover:bg-pink-700 transition shadow-lg inline-flex items-center">
+        <i class="fab fa-instagram mr-2"></i> Instagram @almuqoddasah_tv
+      </a>
+      <a href="https://www.youtube.com/@almuqoddasah_tv" target="_blank" class="px-8 py-4 bg-red-600 text-white rounded-full hover:bg-red-700 transition shadow-lg inline-flex items-center">
+        <i class="fab fa-youtube mr-2"></i> YouTube Al-Muqoddasah TV
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimoni Alumni Section (Rekomendasi Utama) -->
+<section id="testimoni" class="py-20 px-6 bg-secondary/50" data-aos="fade-up">
+  <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Testimoni Alumni</h2>
+  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+    <div class="bg-gradient-to-br from-primary to-secondary/80 rounded-2xl p-8 shadow-2xl hover:scale-105 transition">
+      <img src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3772909417697285880" alt="Alumni Wisuda" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-accent object-cover">
+      <p class="text-center italic mb-4">"Alhamdulillah, hafalan 30 juz di Al-Muqoddasah menjadi bekal utama saya melanjutkan ke Universitas Islam Madinah."</p>
+      <p class="text-center font-bold">— Alumni angkatan awal, kini mahasiswa Madinah</p>
+    </div>
+    <div class="bg-gradient-to-br from-primary to-secondary/80 rounded-2xl p-8 shadow-2xl hover:scale-105 transition">
+      <img src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3773451527932539210" alt="Alumni Hafidzah" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-accent object-cover">
+      <p class="text-center italic mb-4">"Discipline tahfidz di sini membentuk akhlak saya. Kini saya mendirikan ma'had tahfidz kecil di kampung halaman."</p>
+      <p class="text-center font-bold">— Hafidzah Alumni, Pendiri Ma'had Tahfidz</p>
+    </div>
+    <div class="bg-gradient-to-br from-primary to-secondary/80 rounded-2xl p-8 shadow-2xl hover:scale-105 transition">
+      <img src="https://i.ytimg.com/vi/eJc7-Xoumk8/maxresdefault.jpg" alt="Wisuda Haflah" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-accent object-cover">
+      <p class="text-center italic mb-4">"Pengalaman di Al-Muqoddasah membawa saya ke Fakultas Kedokteran UGM sambil tetap menjaga hafalan."</p>
+      <p class="text-center font-bold">— Alumni, Mahasiswa Kedokteran UGM</p>
+    </div>
+  </div>
+  <p class="text-center mt-8 text-lg">Hingga 2025, telah mencetak 445 khatam & 252 wisuda hafidz/hafidzah.</p>
+</section>
+
+<!-- Berita & Video Terkini Section -->
+<section id="berita" class="py-20 px-6 max-w-7xl mx-auto" data-aos="fade-up">
+  <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Berita & Video Terkini</h2>
+  <div class="grid md:grid-cols-2 gap-12">
+    <div>
+      <h3 class="text-2xl font-bold mb-4">Wisuda Haflah Khotmil Qur'an ke-XXII (2025)</h3>
+      <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+        <iframe src="https://www.youtube.com/embed/eJc7-Xoumk8" title="Wisuda Haflah 2025" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-2xl font-bold mb-4">Video Tour Ponpes & Kegiatan Harian</h3>
+      <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+        <iframe src="https://www.youtube.com/embed/HXbLF14fNdc" title="Tour Ponpes" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+      </div>
+      <p class="mt-4">Lihat lebih banyak di channel resmi: <a href="https://www.youtube.com/@almuqoddasah_tv" target="_blank" class="text-accent underline">Al-Muqoddasah TV</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- Jejaring Alumni Section -->
+<section id="alumni" class="py-20 px-6 bg-secondary/50" data-aos="fade-up">
+  <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Jejaring & Prestasi Alumni</h2>
+  <div class="max-w-4xl mx-auto text-center space-y-6">
+    <p class="text-lg">Alumni Al-Muqoddasah tersebar di berbagai universitas top dunia & mendirikan ma'had tahfidz baru.</p>
+    <div class="grid md:grid-cols-4 gap-6 text-sm">
+      <div class="bg-primary/60 p-4 rounded-xl">Al ahgaf Yaman</div>
+      <div class="bg-primary/60 p-4 rounded-xl">Al-Azhar Mesir</div>
+      <div class="bg-primary/60 p-4 rounded-xl">UNIDA Gontor</div>
+      <div class="bg-primary/60 p-4 rounded-xl">Universitas Indonesia</div>
+      <div class="bg-primary/60 p-4 rounded-xl">Universitas Gajah Mada</div>
+      <div class="bg-primary/60 p-4 rounded-xl">Universitas Brawijaya</div>
+      <div class="bg-primary/60 p-4 rounded-xl">UIN Sunan Gunung Djati Bandung</div>
+      <div class="bg-primary/60 p-4 rounded-xl">UIN Syarif Hidayatullah Jakarta</div>
+      <div class="bg-primary/60 p-4 rounded-xl">UIN Sunan Kalijaga Yogyakarta</div>
+      <div class="bg-primary/60 p-4 rounded-xl">UIN Maulana Malik Ibrahim Malang</div>
+      <div class="bg-primary/60 p-4 rounded-xl">UIN Sunan Ampel Surabaya</div>
+      <div class="bg-primary/60 p-4 rounded-xl">UIN Kiai Ageng Muhammad Besari Ponorogo</div>
+      <div class="bg-primary/60 p-4 rounded-xl">Universitas Negri Surabaya</div>
+      <div class="bg-primary/60 p-4 rounded-xl">Universitas Negri Malang</div>
+      <div class="bg-primary/60 p-4 rounded-xl">Universitas Muhammadiyah Yogyakarta</div>
+      <div class="bg-primary/60 p-4 rounded-xl">Universitas Muhammadiyah Jakarta</div>
+    </div>
+    <p class="text-lg">Banyak alumni mendirikan Ma'had Tahfidz Qur'an di berbagai provinsi Indonesia.</p>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="py-20 px-6 max-w-7xl mx-auto" data-aos="fade-up">
+  <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Frequently Asked Questions (FAQ)</h2>
+  <div class="space-y-6 max-w-4xl mx-auto">
+    <div class="bg-secondary/60 rounded-2xl overflow-hidden">
+      <button class="w-full px-6 py-4 text-left font-bold flex justify-between bg-accent/20" onclick="this.nextElementSibling.classList.toggle('hidden')">
+        Apakah boleh membawa HP atau alat elektronik? <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="hidden p-6">Tidak boleh. Santri dilarang membawa alat elektronik, barang berharga, atau berbahaya (sesuai tata tertib).</div>
+    </div>
+    <div class="bg-secondary/60 rounded-2xl overflow-hidden">
+      <button class="w-full px-6 py-4 text-left font-bold flex justify-between bg-accent/20" onclick="this.nextElementSibling.classList.toggle('hidden')">
+        Kapan orang tua boleh menjenguk? <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="hidden p-6">Santri baru boleh dijenguk setelah 2 bulan. Kunjungan maksimal 1 bulan sekali, melalui pengasuhan.</div>
+    </div>
+    <div class="bg-secondary/60 rounded-2xl overflow-hidden">
+      <button class="w-full px-6 py-4 text-left font-bold flex justify-between bg-accent/20" onclick="this.nextElementSibling.classList.toggle('hidden')">
+        Berapa target hafalan Al-Qur'an? <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="hidden p-6">Target 30 Juz lengkap dengan muraja'ah intensif & sanad muttasil.</div>
+    </div>
+    <div class="bg-secondary/60 rounded-2xl overflow-hidden">
+      <button class="w-full px-6 py-4 text-left font-bold flex justify-between bg-accent/20" onclick="this.nextElementSibling.classList.toggle('hidden')">
+        Apakah ada pendidikan formal? <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="hidden p-6">Ya, SD, SMP, dan SMA dengan kurikulum nasional + penguatan agama & bahasa Arab.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Admissions Section (Diperluas) -->
+  <section id="admissions" class="py-20 px-6 max-w-7xl mx-auto" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Pendaftaran Santri Baru</h2>
+    <div class="space-y-8">
+      <p class="text-center text-lg">Pendaftaran 2025/2026 telah lewat. Hubungi narahubung untuk info 2026/2027.</p>
+      <!-- Syarat Umum & Khusus dalam accordion/list dari PDF -->
+      <div class="bg-secondary/60 rounded-2xl p-6">
+        <h3 class="text-2xl font-bold mb-4">Syarat Umum</h3>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Usia min. 6 tahun/tamat TK untuk kelas 1 SD</li>
+          <li>Sehat jasmani-rohani, tidak mengompol</li>
+          <!-- Lengkap dari PDF -->
+        </ul>
+      </div>
+      <a href="https://www.almuqoddasah.sch.id" class="block text-center text-accent underline">Website Resmi: www.almuqoddasah.sch.id</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="py-20 px-6 bg-secondary/50" data-aos="fade-up">
+  <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Kontak Kami</h2>
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+    <!-- Form Kontak -->
+    <div>
+      <form action="https://formspree.io/f/xYourEmailHere" method="POST" class="space-y-6 bg-primary/60 p-8 rounded-2xl border border-slate-700">
+        <input type="text" name="name" placeholder="Nama" required class="w-full px-6 py-4 bg-secondary/70 border border-slate-600 rounded-lg focus:outline-none focus:border-accent">
+        <input type="email" name="email" placeholder="Email" required class="w-full px-6 py-4 bg-secondary/70 border border-slate-600 rounded-lg focus:outline-none focus:border-accent">
+        <textarea name="message" placeholder="Pesan" rows="5" required class="w-full px-6 py-4 bg-secondary/70 border border-slate-600 rounded-lg focus:outline-none focus:border-accent"></textarea>
+        <button type="submit" class="w-full px-6 py-4 bg-accent text-white rounded-lg hover:bg-blue-600 transition shadow-lg">Kirim Pesan</button>
+      </form>
+      <p class="text-sm text-gray-400 mt-4">Form ini akan mengirim pesan langsung ke email admin ponpes (ganti action dengan email Anda via Formspree gratis).</p>
+    </div>
+
+    <!-- Info Kontak & Narahubung -->
+    <div class="space-y-6">
+      <div>
+        <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-3 text-accent"></i> Nglumpang II, Nglumpang, Mlarak, Ponorogo, Jawa Timur</p>
+        <p class="flex items-center mb-2"><i class="fas fa-phone mr-3 text-accent"></i> Telepon: (0352) 311716</p>
+        <p class="flex items-center mb-2"><i class="fas fa-globe mr-3 text-accent"></i> <a href="https://www.almuqoddasah.sch.id" target="_blank" class="underline hover:text-accent">www.almuqoddasah.sch.id</a></p>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-bold mb-4">Narahubung PPDB & Informasi</h3>
+        <ul class="space-y-3 text-lg">
+          <li><i class="fab fa-whatsapp mr-3 text-green-400"></i> Admin PSB: <a href="https://wa.me/6283172088723" class="underline hover:text-accent">0831 7208 8723</a></li>
+          <li><i class="fab fa-whatsapp mr-3 text-green-400"></i> Sekretaris Pengasuh: <a href="https://wa.me/6287761662521" class="underline hover:text-accent">0877 6166 2521</a></li>
+          <li><i class="fab fa-whatsapp mr-3 text-green-400"></i> Administrasi: <a href="https://wa.me/6281216616186" class="underline hover:text-accent">0812 1661 6186</a></li>
+          <li><i class="fab fa-whatsapp mr-3 text-green-400"></i> Staf Pengasuhan Santri: <a href="https://wa.me/6285232509676" class="underline hover:text-accent">0852 3250 9676</a></li>
+          <li><i class="fab fa-whatsapp mr-3 text-green-400"></i> Al-Ustadz Adi Setia Amin: <a href="https://wa.me/6288231716439" class="underline hover:text-accent">0882 3171 6439</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-bold mb-4">Media Sosial Resmi</h3>
+        <div class="flex space-x-6 text-4xl">
+          <a href="https://www.instagram.com/almuqoddasah_tv/" target="_blank" class="hover:text-accent"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/MUQODDASAH1992" target="_blank" class="hover:text-accent"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.youtube.com/@almuqoddasah_tv" target="_blank" class="hover:text-accent"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Google Maps Embed -->
+      <iframe class="mt-8 rounded-2xl shadow-2xl w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.499!2d111.4999218!3d-7.926086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e790aea2d5d1dbf%3A0xe9491d7dc8d20a9f!2sMa&#39;had+Al-Muqoddasah+Li+Tahfizhil+Qur&#39;an!5e0!3m2!1sid!2sid!4v1739999999999" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center border-t border-slate-800">
+    <p>&copy; 2025 Ma'had Al-Muqoddasah Li Tahfizhil Qur'an Ponorogo</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggleDark = document.getElementById('theme-toggle-dark');
+    const themeToggleLight = document.getElementById('theme-toggle-light');
+
+    if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      themeToggleDark.classList.remove('hidden');
+      themeToggleLight.classList.add('hidden');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        themeToggleDark.classList.remove('hidden');
+        themeToggleLight.classList.add('hidden');
+      } else {
+        localStorage.setItem('theme', 'light');
+        themeToggleDark.classList.add('hidden');
+        themeToggleLight.classList.remove('hidden');
+      }
+    });
+
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
